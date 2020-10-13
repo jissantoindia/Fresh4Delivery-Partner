@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "841831221873",
+    "firebase_url": "https://fb-partner.firebaseio.com",
+    "project_id": "fb-partner",
+    "storage_bucket": "fb-partner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841831221873:android:4396ea52bdf753c36f29d0",
+        "android_client_info": {
+          "package_name": "com.seclob.fbpartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841831221873-e51j3st7nqpkd9lm9otni9b6449hbjh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWn_FIGKEkrdIYYw9qT_CyfonNrG1rR18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841831221873-e51j3st7nqpkd9lm9otni9b6449hbjh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

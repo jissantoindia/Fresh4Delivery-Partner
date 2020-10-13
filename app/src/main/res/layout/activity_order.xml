@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#eee"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/orderID"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/oderAmount"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/orderPaymentStatus"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="Order Items"/>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/FoodList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:text="User Details"/>
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cusName"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/cusEmail"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/cusPhone"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/cusAddress1"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/cusAddress2"
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:textSize="13dp"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+
+            <Spinner
+                android:layout_marginTop="6dp"
+                android:id="@+id/classSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inp"
+                android:spinnerMode="dialog"
+                android:padding="8dp"
+                android:entries="@array/status_list"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/order_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDEEEEEE"
+        android:orientation="horizontal"
+        android:elevation="8dp"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FB Partner</string>
+    <string name="api_url">https://flyingbasket.in/admin/Api/</string>
+    <string name="asset_url">https://flyingbasket.in/admin/uploads/restaurant/</string>
+
+    <string-array name="status_list">
+        <item>Change Status</item>
+        <item>Process</item>
+        <item>Ready to pickup</item>
+        <item>Out to delivery</item>
+        <item>Reject</item>
+        <item>Pending</item>
+        <item>Received</item>
+        <item>Delivered</item>
+        <item>Cancelled</item>
+    </string-array>
+</resources>
